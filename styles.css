@@ -5,6 +5,7 @@
     --accent-color: #22D3EE;
     --secondary-accent-color: #06B6D4;
     --border-color: #262626;
+    --hover-color: #0c9eb5;
 }
 
 *{
@@ -113,8 +114,8 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 10px;
-    background-color: var(--accent-color);
-    font-weight: 600;
+    font-weight: 500;
+    word-spacing: 2px;
 
 }
 
@@ -122,4 +123,39 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+.hero__btn--viewProject:hover{
+    background-color: var(--hover-color);
+}
+
+
+.hero__btn--contact{
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--primary-text-color);
+}
+
+.hero__btn--contact:hover{
+    background-color: var(--border-color);
+    
+}
+#svg{
+   width: 25px;
+   height: 25px;
+}
+
+#Path_svg{
+    fill: var(--secondary-text-color);
+}
+
+.social-link{
+    display: inline-block;
+}
+
+.social-link:hover #Path_svg {
+    fill: var(--hover-color);
+    cursor: pointer;
 }
