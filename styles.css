@@ -1,0 +1,125 @@
+:root{
+    --bg-color: #070707;
+    --primary-text-color: #FFFFFF;
+    --secondary-text-color: #9CA3AF;
+    --accent-color: #22D3EE;
+    --secondary-accent-color: #06B6D4;
+    --border-color: #262626;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+    background-color: var(--bg-color);
+}
+
+.header{
+    display: flex;
+    padding: 16px 40px;
+    justify-content: space-between; 
+    align-items: center;
+    border: 1px solid var(--border-color);
+}
+
+.header__logoName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header__logo{
+    width: 30px;
+    height: auto;
+    margin-left: 1.125em;
+}
+
+.header__name{
+    color: var(--secondary-accent-color);
+}
+
+.nav__list{
+    display: flex;
+    list-style-type: none;
+    gap: 1.3rem;
+    font-size: 1.105rem;
+}
+
+.list__link{
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+.list__link:hover{
+    color: var(--primary-text-color);
+}
+
+.hero{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.hero__img__container{
+    width: 400px;
+    max-height: 500px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    background-color: #06B6D4;
+    overflow: hidden;
+}
+
+.hero__avatar{
+    width: 100%;
+    height: 100%;
+}
+
+.hero__title{
+  font-size: 4.3rem;
+  font-weight: 700;
+  text-wrap: balance;
+  line-height: 1.25;
+  color: var(--primary-text-color);
+}
+
+.highlight-text{
+    color: var(--accent-color);
+}
+
+.hero__subText{
+    color: var(--secondary-text-color);
+    font-size: 1.125rem;
+    word-spacing: 2px;
+}
+
+.hero__buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero__btn{
+    width: 160px;
+    height: 45px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    font-weight: 600;
+
+}
+
+.hero__btn--viewProject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

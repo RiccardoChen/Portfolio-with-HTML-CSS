@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Riccardo Chen">
-    <meta name="description" content="Una pagina che presenta il CV di un web developer">
+    <meta name="description" content="Una pagina che mostra il portfolio di Riccardo Chen, scritto in HTML e CSS.">
 
     <meta property="og:title" content="Riccardo Chen CV">
     <meta property="og:url" content="index.html">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Una pagina che presenta il CV di un web developer, scritto principalmente in HTML.">
+    <meta property="og:description" content="Una pagina che mostra il portfolio di Riccardo Chen, scritto in HTML e CSS.">
     <meta property="og:image" content="./chenriccardo1.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="apple.com">
     <meta property="twitter:url" content="index.html">
     <meta name="twitter:title" content="Riccardo Chen CV">
-    <meta name="twitter:description" content="Una pagina che presenta il CV di un web developer, scritto principalmente in HTML.">
+    <meta name="twitter:description" content="Una pagina che mostra il portfolio di Riccardo Chen, scritto in HTML e CSS.">
     <meta name="twitter:image" content="./chenriccardo1.jpg">
 
-    <title>First Project in HTML - CV</title>
+    <title>Riccardo Chen Portfolio</title>
     <link rel="canonical" href="index.html">
     <link rel="stylesheet" href="styles.css">
 
@@ -27,22 +27,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <style>
-        * {
-            margin-left: 15px;
-            margin-right: 15px;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
-        }
-    </style>
+    <link rel="icon" type="image/svg" href="./images/Rik Logo vector.svg">
 </head>
 <body>
-    <head></head>
-    <main></main>
+    <header class="header">
+        <div class="header__logoName">
+            <img src="./images/Rik Logo vector.svg" alt="Logo" class="header__logo">
+            <h1 class="header__name">Rik Portfolio</h1>
+        </div>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li><a href="#" class="list__link">About</a></li>
+                <li><a href="#" class="list__link">Skills</a></li>
+                <li><a href="#" class="list__link">Project</a></li>
+                <li><a href="#" class="list__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="hero">   
+                <div class="hero__text">
+                    <h2 class="hero__title">Hi, I'm Riccardo Chen <br>a <span class="highlight-text">Full-Stack Developer</span></h2>
+                    <br>
+                    <p class="hero__subText">Building beautiful, performant web applications with modern<br> technologies. Passionate about clean code and exceptional<br> user experiences.</p>
+                    <br>
+                    <br>
+                    <div class="hero__buttons">
+                        <button class="hero__btn hero__btn--viewProject">View Projects 
+                            <svg width="40" height="15" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="30" y1="25" x2="70" y2="25" stroke="black" stroke-width="5"/>
+                            <polygon points="70,10 95,25 70,40" fill="black"/>
+                            </svg>
+                        </button>
+                        <button class="hero__btn hero__btn--contact">Contact Me</button>
+                    </div>
+                </div>
+                <div class="hero__img__container">        
+                    <img src="./Riccardo_Chen_image-removebg-preview.png" alt="avatar" class="hero__avatar">
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
+
+    
     
 </body>
 </html>
