@@ -26,6 +26,11 @@ body {
     justify-content: space-between; 
     align-items: center;
     border: 1px solid var(--border-color);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .header__logoName{
@@ -190,12 +195,13 @@ body {
     display: flex;  
     flex-direction: column;
     padding: 5% 0px 5%;
+    margin-bottom: 5%;
 }
 
-.aboutMe__title {
+.section__title {
     color: var(--primary-text-color);
     opacity: .9;
-    font-size: 4.1rem;
+    font-size: 3.8rem;
     margin-bottom: 5%;
     letter-spacing: 5px;
     align-self: center;
@@ -253,7 +259,7 @@ body {
     border: 2px solid var(--border-color);
     width: 100%;
     height: 100%;   
-    box-shadow: 0 0 5px var(--hover-color) ;
+    box-shadow: 0 0 20px var(--hover-color) ;
     overflow: hidden;
 }   
 
@@ -270,6 +276,107 @@ body {
     font-size: 1.2rem;
     max-width: 600px;
     line-height: 1.5;
-
-    
 }
+
+.projects__box{
+    width: 80%;
+    display: flex;  
+    flex-direction: column;
+    padding: 5% 0px 5%;
+
+}
+
+.projects__grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 40% );
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+
+.single-project{
+  
+    background: rgb(from var(--section-color) r g b / 0.7);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    row-gap: 15px;
+    transition: border .3s ease-out, transform .3s ease-out;
+}
+
+.project__img{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+}
+
+.project__title{
+    color: var(--primary-text-color);
+    font-size: 1.53rem;
+    transition: color .3s ease-out;
+}
+
+.project__text{
+    color: var(--secondary-text-color);
+    margin-bottom: 1%;
+}
+
+.project__languages{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.project__language{
+    padding: 4px 8px;
+    background-color: var(--border-color);
+    color: var(--primary-text-color);
+    font-size: .75rem;
+    font-weight: 700;
+    border-radius: 30px;
+
+}
+.project__links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project__link{
+    text-decoration: none;
+     color: var(--accent-color);
+     display: flex;
+     align-items: center;
+    cursor: pointer;
+
+}
+
+.line{
+    stroke: var(--accent-color);
+}
+
+.polygon {
+    fill: var(--accent-color) ;
+   
+}
+
+.single-project:hover{
+    border: 1px solid var(--accent-color);
+    transform: translateY(-10px);
+}
+
+.single-project:hover .project__title{
+    color: var(--accent-color);
+}
+
+.skills_box{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0px 5%;
+}
+
