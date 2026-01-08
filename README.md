@@ -57,10 +57,6 @@ The website is designed to be fully responsive and works seamlessly on:
 
 **Riccardo Chen** - Portfolio Owner
 
-## 😎 Preview
-
-Link: https://rikportfolio.netlify.app/
-
 ---
 
 *Last updated: January 2026*
