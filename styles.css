@@ -33,6 +33,7 @@ body {
     align-items: center;
     border: 1px solid var(--border-color);
     background-color: transparent;
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     position: sticky;
     top: 0;
